@@ -1,0 +1,54 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Project folders and files to ignore
+vendor
+node_modules
+documentation
+bower_components
+public/docs
+public/uploads/*
+!public/uploads/.gitkeep
+.openshift/env/*
+!.openshift/env/.gitkeep
+dist
+core*
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log*
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+*.lock
+!**/yarn.lock
+!**/composer.lock
+
+# Dotenv
+.env
+.env.*
+!.env.example
+keys.txt
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+*.komodoproject
+.komodotools
+.atom
+.vscode
+.directory
+.sql
