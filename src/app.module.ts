@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { FileModule } from './modules/file/file.module';
 import { DATABASE_PROVIDER } from './libs/providers/database.provider';
@@ -19,11 +17,8 @@ import { UserModule } from './modules/user/user.module';
     }),
     UserModule,
   ],
-  controllers: [AppController],
   providers: [
-    AppService,
     DATABASE_PROVIDER,
-    // { provide: APP_INTERCEPTOR, useClass: PasswordInterceptor },
   ],
 })
 export class AppModule {}

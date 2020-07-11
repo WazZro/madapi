@@ -1,12 +1,5 @@
 import * as Argon from 'argon2';
-import {
-  BeforeCreate,
-  Column,
-  DataType,
-  Model,
-  PrimaryKey,
-  Table,
-} from 'sequelize-typescript';
+import { BeforeCreate, Column, Model, Table } from 'sequelize-typescript';
 import { ARGON_HASHING_THREADS, ARGON_HASHING_TIME } from '../constants';
 
 @Table

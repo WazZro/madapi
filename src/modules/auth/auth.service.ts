@@ -27,9 +27,8 @@ export class AuthService {
   }
 
   public async refreshToken(token: string): Promise<User & Tokenable> {
-    // @ts-ignore
     const session = await RefreshToken.findByPk(token);
-    if (!session) throw new UnauthorizedException();
+    if (!session || session.isExpired()) throw new UnauthorizedException();
     return this.createRefreshAccess(session.user);
   }
 
